@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Repositorios Remotos</title>
+</head>
+<body>
+
+    <h1>COMANDOS MÁS USADOS EN GITHUB</h1>
+    
+    <h2>Crear Repositorio</h2>
+
+    <ul>
+        <li>Lo primero que debemos hacer es crear la cuenta en la página de GitHub</li>
+        <li>Creamos un nuevo respositorio</li>
+        <li>Le damos un nombre y una descripción</li>
+        <li>seleccionamos la casilla de verificación de <i>'initialize this repository with a README'</i></li>
+        <li>dejamos el repositorio como público</li>
+        <li>damos clic en <i>'Create Repository'</i></li>
+    </ul>
+    
+    <h2>Crear nuevo archivo en Github</h2>
+    <ul>
+        <li>hacer clic en <i>Add file</i> luego en <i>Create new file</i></li>
+        <li>Dar nombre al aarchivo</li>
+        <li>Realizar los cambios al archivo</li>
+        <li>dar chic en <i>Commit changes</i></li>
+        <li>En la ventana que se despliega poner el título del commit y una descripción</li>
+        <li>Dar clic en <i>Commit changes</i></li>
+    </ul>
+    <p>Haciendo clic en la parte superior de Github y oprimiendo la tecla '.' podemos ingrear al editor en línea de VSCode para crear y editar achivos.</p>
+    
+    <ul>
+        <li>Una vez creado y modificado el archivo, nos vamos al icono de git</li>
+        <li>ponemos el mensaje del commit</li>
+        <li>damos clic en <i>Commit & Push</i></li>
+    </ul>
+
+    <p>Una vez creado el repositorio, en la pestaña code, damos clic y copiamos la url que aparece allí</p>
+    <p>volvemos al gitbash y nos ubicamos en la rama MASTER</p>
+
+    <p><b>git remote add origin url_copiada_de_github </b></p>
+    <p><b>git remote -v </b>nos muestra que está listo el repositorio para hacer 'fetch: traer' y 'push: enviar'</p>
+    <p><b>git push origin master</b> envía al origen la rama MASTER de nuestro proyecto</p>
+    <p><b>git pull origin master </b> Trae todos los cambios de origin hacia el master</p>
+
+
+</body>
+</html>

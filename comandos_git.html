@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <h1>COMANDOS MÁS USADOS EN GIT</h1>
+    
+    <h2>DESDE LA PAGINA DE GITHUB</h2>
+    
+  
+    <h3>Crear Repositorio</h3>
+
+    <ul>
+        <li>Lo primero que debemos hacer es crear la cuenta en la página de GitHub</li>
+        <li>Creamos un nuevo respositorio</li>
+        <li>Le damos un nombre y una descripción</li>
+        <li>seleccionamos la casilla de verificación de <i>'initialize this repository with a README'</i></li>
+        <li>dejamos el repositorio como público</li>
+        <li>damos clic en <i>'Create Repository'</i></li>
+    </ul>
+    
+    <h2>Crear nuevo archivo en Github</h2>
+    <ul>
+        <li>hacer clic en <i>Add file</i> luego en <i>Create new file</i></li>
+        <li>Dar nombre al aarchivo</li>
+        <li>Realizar los cambios al archivo</li>
+        <li>dar chic en <i>Commit changes</i></li>
+        <li>En la ventana que se despliega poner el título del commit y una descripción</li>
+        <li>Dar clic en <i>Commit changes</i></li>
+    </ul>
+    <p>Haciendo clic en la parte superior de Github y oprimiendo la tecla '.' podemos ingrear al editor en línea de VSCode para crear y editar achivos.</p>
+    
+    <ul>
+        <li>Una vez creado y modificado el archivo, nos vamos al icono de git</li>
+        <li>ponemos el mensaje del commit</li>
+        <li>damos clic en <i>Commit & Push</i></li>
+    </ul>
+    
+    <h2>DESDE EL EQUIPO LOCAL</h2>
+    
+    
+    <p>Lo primero que hay que hacer, luego de instalar Git, es establecer el <i>usuario</i> y <i>correo electrónico</i></p>
+    
+    <ul>
+        <li>git config --global user.name "<i>tu nombre</i>"</li>
+        <li>git config --global user.email <i>tu@correo</i></li>
+    </ul>
+
+    <p>agregamos un mensaje en la rama MASTER del proyecto</p>
+
+    <h2>Comandos básicos</h2>
+    
+    <ul>
+        <li><b>pwd</b> nos muestra la ubicación actual en la consola</li>
+        <li><b>ls</b> listado de archivos en la carpeta</li>
+        <li><b>ls -al</b>   listado detallado de archivos</li>
+        <li><b>cd + nombre de carpeta</b>   cambio de directorio</li>
+        <li><b>cd ..</b> salir de la carpeta actual</li>
+    </ul>
+
+    <h4>otra forma más fácil de acceder a la carpeta es desde el explorador de archivos de Windows</h4>
+    
+    <ul>
+        <li>Entrar a la carpeta de destino</li>
+        <li>clic derecho dentro de la carpeta</li>
+        <li>dar clic en <i>'mostrar más opciones'</i></li>
+        <li>clic en <i>'open Git Bash here'</i> </li>
+    </ul>
+    <br>
+    <h3>Para descargar el proyecto creado en la página de github al equipo local</h3>
+
+    <ul>
+        <li>desde el repositorio de la página de Github, dar clic en el boton <i>'code'</i></li>
+        <li>en la pesataña <i>'local'</i> copiar la dirección que aparece en HTTPS</li>
+        <li>En la consola del equipo local, ya ubicados en la ruta donde se va a colocar el proyecto, escribimos <i>'git clone y la dirección copiada del github'</i></li>
+        <li>luego, ingresamos a la carpeta descargada de github con <i>'cd nombre_carpeta'</i></li>
+    </ul>
+
+    <h3>Para ver el historial del proyecto:</h3>
+    
+    <ul>
+        <li><b>git log</b> muestra el historial de cambios realizados al proyecto</li>
+        <li><b>git log --oneline</b> Muestra el historial de forma resumida</li>
+        <li><b>git status</b> nos muestra si hay cambios pendientes por 'subir'</li>
+        <li><b></b> </li>
+        <li><b></b> </li>
+    </ul>
+
+    <br><br><br><br><br>
+
+    <h4>Para abrir VSCode desde Git Bash</h4>
+    <p><b>code .</b></p>
+    <br>
+    
+    <h4>Para verificar si nuestro proyecto está actualizado</h4>
+    <p><b>git pull </b> nos muestra si hay cambios pendientes por 'subir'</p>
+    <br>
+    
+    <h4>Para abrir VSCode desde Git Bash</h4>
+    <p><b>code .</b></p>
+    <br>
+    
+    <h4>Para volver a una versión anterior del proyecto</h4>
+    <p><b>git log --oneline</b> para ver los cambios realizados</p>
+    <p><b>git respore --source 'codigo' 'nombre del archivo'</b> el repositorio ahora se vuelve a la versión escogida</p>
+    <p><b>git add .</b> para agregar los cambios</p>
+    <p><b>git commit -m </b> para subir al servidor remoto</p>
+    <p><b>git push </b> para subir el proyecto al git</p>
+
+    <br>
+    
+    <p><b>mkdir nombre_carpeta</b>   crea un acarpeta</p>
+    <p><b>touch nombre_archivo.estensión</b>   crea un archivo en la carpeta</p>
+    <p><b>cat nombre_archivo.estensión</b>   muestra el contenido del archivo</p>
+    <p><b>rm nombre_archivo.extensión</b>   elimina el archivo</p>
+    <br>
+
+    <h2>Comandos para repositorios</h2>
+    <p>Luego de crear el proyecto en la página de github, y de estar trabajando git bash en la ruta donde voy a guardar el proyecto.</p>
+    <p>Hasta este punto, git bash muestra la ruta del proyecto pero no me muestra ninguna rama</p>
+
+    <p><b>git init </b>   crea el repositorio en GIT. se crea una carpeta 'git' oculta en el directorio del proyecto</p>
+    <p>En la consola ahora podemos visualizar una rama 'master'</p>
+    <p>en el editor de código, creamos y modificamos los archivos</p>
+    <p><b>git status </b>   muestra el esatdo actual del proyecto</p>
+    <p><i>Luego de realizar cambios al o los archivos del proyecto, se deben guardar estos cambios </i></p>
+    <p><b>git add nombre_archivo.extensión</b>   alista el archivo para guardarlos en el repositorio (estado stagin)</p>
+    <p><b>git add .</b>   se utiliza para guardar cambios en varios archivos del mismo repositorio</p>
+    <p><b>git commit -m "escribe el mensaje aquí" </b>   guarda los cambios realizados en el repositorio MASTER</p>
+    <p><b>git commit -am "mensaje"</b>es igual que 'git add + git commit -m "mensaje"</p>
+    <p><b>git remote add origin dirección del respositorio en Github </b> es igual que 'git add + git commit -m "mensaje"</p>
+    <p><b>git remote -v </b> deben aparecer una línea con el 'fetch' y otra con el 'push' que indican que ya hay conexión con el repositorio remoto</p>
+
+    <p>La rama 'MASTER' debe pasar a ser ahora la rama 'MAIN' del proyecto. Para cambiarle hacemos lo siguiente:</p>
+
+    <p><b>git branch -M main </b> para cambiar la rama 'master' por rama 'main'</p>
+    
+    <p><b>git push -u origin main </b> para guardar el proyecto en el repositorio de github. Se utiliza el comando '-u' para evitar que cada vez que hagamos un nuevo commit tener que escribir 'git push origin main', ahora solo se escribe 'git push' </p>
+    
+
+    <p><b>checkout </b>   trae todos los cambios del MASTER de la versión anterior al HEAD</p>
+    <p><b>git log nombre_archivo.extensión</b>   muestra los cambios realizados al repositorio</p>
+    <br>
+
+    <h2>para trabajar con ramas (Branch)</h2>
+    <p><b>git branch </b> muestra las ramas existentes en el proyecto</p>
+    <p><b>git branch nombre_rama</b> creamos la rama</p>
+    <p><b>git checkout nombre_rama </b>ahora está trabajando en la rama, no en el MASTER</p>
+    <p><b>git checkout -b <i>nombre_rama</i></b> realiza los dos pasos anteriores en uno solo</p>
+    <p><b>git switch main</b> para retornar a la rama principal</p>
+    <p><b>git switch nombre_rama</b> para cambiar a una de las ramas</p>
+
+    <p>a partir de aquí se estará trabajando en la rama seleccionada</p>
+    <p>Luego de realizar los cambios en el proyecto:</p>
+    <p><b>git add .</b> para guardar los cambios</p>
+    <p><b>git commit -m</b> para incluir los cambios en el servidor remoto</p>
+    <p><b>git push origin nombre_rama</b> para guardar los cambios en el repositorio remoto</p>
+
+    <p>hasta aquí podemos ver los cambios realizados en la página de GitHub, pero aún están en la rama auxiliar, no en la MASTER</p>
+
+    <p>Para guaradar los cambios en la rama principal debo ubicarme en la rama MASTER o MAIN</p>
+
+    <p><b>git switch main</b> cambiamos a la rama principal</p>
+
+    <p><b>git merge nombre_rama -m "mensaje"</b> guarda los cambios de la rama en el MASTER</p>
+
+    <p><b>git push origin main</b> para subir los cambios al repositorio en Github</p>
+
+
+
+    <h2>pasos resumidos</h2>
+    <p>una vez ubicados en la ruta local del proyecto:</p>
+    <ul>
+        <li><b>git init</b> para crear el repositorio</li>
+        <li><b>git status</b> para ver si hay cambios pendientes</li>
+
+        <li><b>git git add .</b> guardamos los cambios realizados en todo el proyecto</li>
+        <li><b>git commit -m</b> se crea el commit para realizar los cambios en el servidor remoto</li>
+        <li><b>git push</b> envía los cambios al repositorio remoto</li>
+    </ul>
+
+
+
+
+</body>
+</html>
